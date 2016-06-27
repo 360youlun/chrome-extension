@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Ylly",
+  "description": "Additional tools for developers of ylly.com",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://youlun.tpondemand.com/*"],
+      "js": ["tpondemand/include.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    "tpondemand/*"
+  ]
+}
